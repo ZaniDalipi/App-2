@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main_graph"
+    app:startDestination="@id/homeMenu_dest">
+
+    <fragment
+        android:id="@+id/homeMenu_dest"
+        android:name="com.zanoApps.orderapp.View.MenuHomeFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu_home" >
+        <action
+            android:id="@+id/action_homeMenu_dest_to_specialOrder_dest"
+            app:destination="@id/specialOrder_dest" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_order_dest"
+            app:destination="@id/order_dest"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_pizzaCategoryFragment"
+            app:destination="@id/pizzaCategory_dest" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_drinksCategoryFragment"
+            app:destination="@id/drinksCategory_dest" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_saladCategoryFragment"
+            app:destination="@id/saladCategory_dest" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_pastaCategoryFragment"
+            app:destination="@id/pastaCategory_dest" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_chickenCategoryFragment"
+            app:destination="@id/chickenCategory_dest" />
+        <action
+            android:id="@+id/action_homeMenu_dest_to_meatCategoryFragment"
+            app:destination="@id/meatCategory_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/specialOrder_dest"
+        android:name="com.zanoApps.orderapp.View.SpecialOrderFragment"
+        android:label="Special"
+        tools:layout="@layout/fragment_special_order" />
+    <fragment
+        android:id="@+id/order_dest"
+        android:name="com.zanoApps.orderapp.View.OrderFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/chickenCategory_dest"
+        android:name="com.zanoApps.orderapp.View.CategoryFragments.ChickenCategoryFragment"
+        android:label="Chicken"
+        tools:layout="@layout/fragment_chicken_category">
+        <action
+            android:id="@+id/action_chickenCategoryFragment_to_chickenDetailsFragment"
+            app:destination="@id/chickenDetails_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksCategory_dest"
+        android:name="com.zanoApps.orderapp.View.CategoryFragments.DrinksCategoryFragment"
+        android:label="Drinks"
+        tools:layout="@layout/fragment_drinks_category">
+        <action
+            android:id="@+id/action_drinksCategoryFragment_to_drinksDetailsFragment"
+            app:destination="@id/drinksDetails_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/meatCategory_dest"
+        android:name="com.zanoApps.orderapp.View.CategoryFragments.MeatCategoryFragment"
+        android:label="Meat"
+        tools:layout="@layout/fragment_meat_category">
+        <action
+            android:id="@+id/action_meatCategoryFragment_to_meatDetailsFragment"
+            app:destination="@id/meatDetails_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/pastaCategory_dest"
+        android:name="com.zanoApps.orderapp.View.CategoryFragments.PastaCategoryFragment"
+        android:label="Pasta"
+        tools:layout="@layout/fragment_pasta_category">
+        <action
+            android:id="@+id/action_pastaCategoryFragment_to_pastaDetailsFragment"
+            app:destination="@id/pastaDetails_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/pizzaCategory_dest"
+        android:name="com.zanoApps.orderapp.View.CategoryFragments.PizzaCategoryFragment"
+        android:label="Pizza"
+        tools:layout="@layout/fragment_pizza_category">
+        <action
+            android:id="@+id/action_pizzaCategoryFragment_to_pizzaDetailsFragment"
+            app:destination="@id/pizzaDetails__dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/saladCategory_dest"
+        android:name="com.zanoApps.orderapp.View.CategoryFragments.SaladCategoryFragment"
+        android:label="Salad"
+        tools:layout="@layout/fragment_salad_category">
+        <action
+            android:id="@+id/action_saladCategoryFragment_to_saladDetailsFragment"
+            app:destination="@id/saladDetails_dest" />
+    </fragment>
+    <fragment
+        android:id="@+id/chickenDetails_dest"
+        android:name="com.zanoApps.orderapp.View.DetailsFragments.ChickenDetailsFragment"
+        android:label="fragment_chicken_details"
+        tools:layout="@layout/fragment_chicken_details" />
+    <fragment
+        android:id="@+id/drinksDetails_dest"
+        android:name="com.zanoApps.orderapp.View.DetailsFragments.DrinksDetailsFragment"
+        android:label="fragment_drinks_details"
+        tools:layout="@layout/fragment_drinks_details" />
+    <fragment
+        android:id="@+id/pizzaDetails__dest"
+        android:name="com.zanoApps.orderapp.View.DetailsFragments.PizzaDetailsFragment"
+        android:label="fragment_pizza_details"
+        tools:layout="@layout/fragment_pizza_details" />
+    <fragment
+        android:id="@+id/meatDetails_dest"
+        android:name="com.zanoApps.orderapp.View.DetailsFragments.MeatDetailsFragment"
+        android:label="fragment_meat_details"
+        tools:layout="@layout/fragment_meat_details" />
+    <fragment
+        android:id="@+id/pastaDetails_dest"
+        android:name="com.zanoApps.orderapp.View.DetailsFragments.PastaDetailsFragment"
+        android:label="fragment_pasta_details"
+        tools:layout="@layout/fragment_pasta_details" />
+    <fragment
+        android:id="@+id/saladDetails_dest"
+        android:name="com.zanoApps.orderapp.View.DetailsFragments.SaladDetailsFragment"
+        android:label="fragment_salad_details"
+        tools:layout="@layout/fragment_salad_details" />
+</navigation>

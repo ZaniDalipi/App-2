@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/specialOrder_dest"
+        android:icon="@drawable/headphone_no_color_xxhdpi"
+        android:title="@string/special"/>
+
+    <item android:id="@+id/homeMenu_dest"
+        android:icon="@drawable/hamburger_no_color_96_xxxhdpi"
+        android:title="@string/menu"/>
+
+    <item android:id="@+id/order_dest"
+        android:icon="@drawable/vase_no_color_xxxhdpi"
+        android:title="@string/order"/>
+
+</menu>
