@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="cardView_width">64dp</dimen>
-    <dimen name="cardView_height">64dp</dimen>
+    <dimen name="cardView_width">128dp</dimen>
+    <dimen name="cardView_height">118dp</dimen>
+    <dimen name="cardView_corner_radius">12dp</dimen>
+    <dimen name="divider_height">12dp</dimen>
 </resources>

@@ -7,5 +7,8 @@
     <string name="more">more</string>
     <string name="drinks">Drinks</string>
     <string name="salads">Salads</string>
+    <string name="mocking_price">Price: 15.55$</string>
+    <string name="chicken">Chicken</string>
+    <string name="meat">Meat</string>
 
 </resources>
