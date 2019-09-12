@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
         
         val host: NavHostFragment = supportFragmentManager
-            .findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment ?: return
+            .findFragmentById(R.id.my_nav_host_fragment) as NavHostFragment
 
         val drawerLayout: DrawerLayout? = findViewById(R.id.drawer_layout)
         bottomNav = findViewById(R.id.bottom_nav_view)

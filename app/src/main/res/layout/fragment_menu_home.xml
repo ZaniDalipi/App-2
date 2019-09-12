@@ -1,11 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_v3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".View.MenuHomeFragment">
+    tools:context=".View.MenuHomeFragment"
+    tools:ignore="ScrollViewSize">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Drink_Section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/drinks_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drinks"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintTop_toTopOf="@id/Drink_Section"
+            app:layout_constraintStart_toStartOf="@id/Drink_Section"
+            app:layout_constraintBottom_toTopOf="@+id/drinks_horizontal_linear_layout"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/BackgroundcolorBottomNav"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/drinks_horizontal_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintStart_toStartOf="@id/Drink_Section"
+            app:layout_constraintEnd_toEndOf="@id/Drink_Section"
+            app:layout_constraintTop_toBottomOf="@id/drinks_text_view"
+            app:layout_constraintStart_toEndOf="@id/Drink_Section"
+            android:layout_marginTop="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/moreDrinks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:backgroundTint="@color/colorBottomNavNotChecked"
+            app:layout_constraintTop_toBottomOf="@id/drinks_horizontal_linear_layout"
+            app:layout_constraintStart_toStartOf="@id/Drink_Section"
+            app:layout_constraintEnd_toEndOf="@id/Drink_Section"
+            android:layout_marginTop="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/Salad_Section"
+        tools:targetApi="q" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Salad_Section"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Drink_Section">
+
+        <TextView
+            android:id="@+id/salad_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salads"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_constraintTop_toTopOf="@id/Salad_Section"
+            app:layout_constraintStart_toStartOf="@id/Salad_Section"
+            android:textColor="@color/BackgroundcolorBottomNav"
+            app:layout_constraintBottom_toTopOf="@+id/salad_horizontal_linear_layout"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/salad_horizontal_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/Salad_Section"
+            app:layout_constraintEnd_toEndOf="@id/Salad_Section"
+            app:layout_constraintTop_toBottomOf="@id/salad_text_view"
+            app:layout_constraintStart_toEndOf="@id/Salad_Section"
+            android:layout_marginTop="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardView_width"
+                android:layout_height="@dimen/cardView_height"
+                style="@style/Widget.MaterialComponents.CardView"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="24dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/moreSalads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more"
+            android:background="@color/colorBottomNavNotChecked"
+            app:layout_constraintTop_toBottomOf="@id/salad_horizontal_linear_layout"
+            app:layout_constraintStart_toStartOf="@id/Salad_Section"
+            app:layout_constraintEnd_toEndOf="@id/Salad_Section"
+            android:layout_marginTop="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/moreSalads"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
