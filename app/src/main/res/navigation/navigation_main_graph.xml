@@ -21,22 +21,30 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
-            android:id="@+id/action_homeMenu_dest_to_pizzaCategoryFragment"
+            android:id="@+id/action_homeMenu_dest_to_pizzaCategory_dest"
             app:destination="@id/pizzaCategory_dest" />
         <action
-            android:id="@+id/action_homeMenu_dest_to_drinksCategoryFragment"
-            app:destination="@id/drinksCategory_dest" />
+            android:id="@+id/action_homeMenu_dest_to_drinksCategory_dest"
+            app:destination="@id/drinksCategory_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
-            android:id="@+id/action_homeMenu_dest_to_saladCategoryFragment"
-            app:destination="@id/saladCategory_dest" />
+            android:id="@+id/action_homeMenu_dest_to_saladCategory_dest"
+            app:destination="@id/saladCategory_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
-            android:id="@+id/action_homeMenu_dest_to_pastaCategoryFragment"
+            android:id="@+id/action_homeMenu_dest_to_pastaCategory_dest"
             app:destination="@id/pastaCategory_dest" />
         <action
-            android:id="@+id/action_homeMenu_dest_to_chickenCategoryFragment"
+            android:id="@+id/action_homeMenu_dest_to_chickenCategory_dest"
             app:destination="@id/chickenCategory_dest" />
         <action
-            android:id="@+id/action_homeMenu_dest_to_meatCategoryFragment"
+            android:id="@+id/action_homeMenu_dest_to_meatCategory_dest"
             app:destination="@id/meatCategory_dest" />
     </fragment>
     <fragment
@@ -55,7 +63,7 @@
         android:label="Chicken"
         tools:layout="@layout/fragment_chicken_category">
         <action
-            android:id="@+id/action_chickenCategoryFragment_to_chickenDetailsFragment"
+            android:id="@+id/action_chickenCategoryFragment_to_chickenDetails_dest"
             app:destination="@id/chickenDetails_dest" />
     </fragment>
     <fragment
@@ -64,7 +72,7 @@
         android:label="Drinks"
         tools:layout="@layout/fragment_drinks_category">
         <action
-            android:id="@+id/action_drinksCategoryFragment_to_drinksDetailsFragment"
+            android:id="@+id/action_drinksCategoryFragment_to_drinksDetails_dest"
             app:destination="@id/drinksDetails_dest" />
     </fragment>
     <fragment
@@ -73,7 +81,7 @@
         android:label="Meat"
         tools:layout="@layout/fragment_meat_category">
         <action
-            android:id="@+id/action_meatCategoryFragment_to_meatDetailsFragment"
+            android:id="@+id/action_meatCategoryFragment_to_meatDetails_dest"
             app:destination="@id/meatDetails_dest" />
     </fragment>
     <fragment
@@ -82,7 +90,7 @@
         android:label="Pasta"
         tools:layout="@layout/fragment_pasta_category">
         <action
-            android:id="@+id/action_pastaCategoryFragment_to_pastaDetailsFragment"
+            android:id="@+id/action_pastaCategoryFragment_to_pastaDetails_dest"
             app:destination="@id/pastaDetails_dest" />
     </fragment>
     <fragment
@@ -91,7 +99,7 @@
         android:label="Pizza"
         tools:layout="@layout/fragment_pizza_category">
         <action
-            android:id="@+id/action_pizzaCategoryFragment_to_pizzaDetailsFragment"
+            android:id="@+id/action_pizzaCategoryFragment_to_pizzaDetails_dest"
             app:destination="@id/pizzaDetails__dest" />
     </fragment>
     <fragment
@@ -100,7 +108,7 @@
         android:label="Salad"
         tools:layout="@layout/fragment_salad_category">
         <action
-            android:id="@+id/action_saladCategoryFragment_to_saladDetailsFragment"
+            android:id="@+id/action_saladCategoryFragment_to_saladDetails_dest"
             app:destination="@id/saladDetails_dest" />
     </fragment>
     <fragment
