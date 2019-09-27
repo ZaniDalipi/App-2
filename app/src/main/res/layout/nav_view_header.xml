@@ -3,10 +3,58 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:textAlignment="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:padding="8dp"
+        android:background="@drawable/button_shape"
+        android:src="@drawable/ic_launcher_foreground" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:text="name : Zani"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:background="?android:attr/listDivider"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lastName: Dalipi"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email: zanoin@gmail.com"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="bottom"
-        android:background="?android:attr/listDivider" />
+        android:background="?android:attr/listDivider" >
+    </View>
 </FrameLayout>

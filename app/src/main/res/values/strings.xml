@@ -10,5 +10,6 @@
     <string name="mocking_price">Price: 15.55$</string>
     <string name="chicken">Chicken</string>
     <string name="meat">Meat</string>
+    <string name="demo_card_text">SomeFruits</string>
 
 </resources>

@@ -2,6 +2,7 @@
   <dictionary name="kranj">
     <words>
       <w>coroutines</w>
+      <w>mtrl</w>
     </words>
   </dictionary>
 </component>
