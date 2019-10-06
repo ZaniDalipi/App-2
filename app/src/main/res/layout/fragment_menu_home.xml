@@ -51,6 +51,7 @@
             android:layout_marginTop="12dp">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card1"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -86,6 +87,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -117,6 +119,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card3"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -215,6 +218,7 @@
             android:layout_marginTop="12dp">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card4"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -243,6 +247,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card5"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -273,6 +278,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card6"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -369,6 +375,7 @@
             android:layout_marginTop="12dp">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card7"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -401,6 +408,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card8"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
@@ -431,6 +439,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card9"
                 android:layout_width="@dimen/cardView_width"
                 android:layout_height="@dimen/cardView_height"
                 style="@style/Widget.MaterialComponents.CardView"
